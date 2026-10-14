@@ -1,0 +1,22 @@
+{
+  "@context": "http://iiif.io/api/image/3/context.json",
+  "id": "https://example.com/iiif/CO700-JAMAICA36",
+  "type": "ImageService3",
+  "profile": "level0",
+  "protocol": "http://iiif.io/api/image",
+  "tiles": [
+    {
+      "scaleFactors": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32
+      ],
+      "width": 512
+    }
+  ],
+  "width": 9642,
+  "height": 3972
+}
