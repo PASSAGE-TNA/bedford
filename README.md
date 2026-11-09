@@ -2,7 +2,7 @@
 
 The Bedford’s second and third passages plotted on a 1719 world map.
 
-**[View the collection in Tamerlane](https://tamerlaneviewer.github.io/tamerlane/?iiif-content=https://jptmoore.github.io/bedford/passage.json)**
+**[View the collection in Tamerlane](https://tamerlaneviewer.github.io/tamerlane/?iiif-content=https://jptmoore.github.io/bedford/iiif/passage.json)**
 
 ## About
 

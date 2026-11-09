@@ -3,7 +3,7 @@
     "http://geojson.org/geojson-ld/geojson-context.jsonld",
     "http://iiif.io/api/presentation/3/context.json"
   ],
-  "id": "https://jptmoore.github.io/bedford/secondpassage-manifest.json",
+  "id": "https://jptmoore.github.io/bedford/iiif/secondpassage.json",
   "type": "Manifest",
   "label": {
     "en": [

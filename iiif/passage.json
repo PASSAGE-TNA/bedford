@@ -1,6 +1,6 @@
 {
   "@context": "http://iiif.io/api/presentation/3/context.json",
-  "id": "https://jptmoore.github.io/bedford/passage.json",
+  "id": "https://jptmoore.github.io/bedford/iiif/passage.json",
   "type": "Collection",
   "label": {
     "en": [
