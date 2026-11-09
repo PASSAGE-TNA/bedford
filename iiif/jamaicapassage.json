@@ -1,0 +1,175 @@
+{
+  "@context": [
+    "http://geojson.org/geojson-ld/geojson-context.jsonld",
+    "http://iiif.io/api/presentation/3/context.json"
+  ],
+  "id": "https://jptmoore.github.io/bedford/iiif/jamaicapassage.json",
+  "type": "Manifest",
+  "label": {
+    "en": [
+      "Bedford: Jamaica Stops"
+    ]
+  },
+  "summary": {
+    "en": [
+      "The stops the Bedford made in Jamaica."
+    ]
+  },
+  "metadata": [
+    {
+      "label": {
+        "en": [
+          "About"
+        ]
+      },
+      "value": {
+        "en": [
+          "<p>This map reveals key points on the ship Bedford's voyage that intersect with Jamaica.</p> <p>To navigate through the story, click the text on the right hand side.</p>"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Content warning"
+        ]
+      },
+      "value": {
+        "en": [
+          "This resource covers sensitive topics and should be approached with care. It includes quotes from material that contains dehumanising and distressing descriptions of enslavement. "
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Catalogue reference"
+        ]
+      },
+      "value": {
+        "en": [
+          "TBC."
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Image reference"
+        ]
+      },
+      "value": {
+        "en": [
+          "The National Archives: CO700-JAMAICA36."
+        ]
+      }
+    },
+    {
+    "label": {
+      "en": [
+        "Attribution and usage"
+      ]
+    },
+    "value": {
+      "en": [
+        "The National Archives",
+        "<span>You have permission to make copies of this work under a <a target=\"_top\" href=\"http://creativecommons.org/licenses/by-nc/4.0/\">Creative Commons, Attribution, Non-commercial license</a>.<br/><br/>Non-commercial use includes private study, academic research, teaching, and other activities that are not primarily intended for, or directed towards, commercial advantage or private monetary compensation. See the <a target=\"_top\" href=\"http://creativecommons.org/licenses/by-nc/4.0/legalcode\">Legal Code</a> for further information.<br/><br/>Image source should be attributed as specified in the full catalogue record. If no source is given the image should be attributed to The National Archives.</span>"
+      ]
+    }
+  }
+],
+  "provider": [{
+  "id": "https://nationalarchives.gov.uk",
+  "type": "Agent",
+  "label": {
+    "en": [
+      "The National Archives",
+      "Bessant Drive, Richmond",
+      "TW9 4DU UK",
+      "T +44 (0)20 8876 3444",
+      "E research@nationalarchives.gov.uk",
+      "https://nationalarchives.gov.uk"
+    ]
+  },
+  "homepage": [
+    {
+      "id": "https://nationalarchives.gov.uk",
+      "type": "Text",
+      "label": {
+        "en": [
+          "Explore our collections"
+        ]
+      },
+      "format": "text/html"
+    }
+  ]
+}],
+  "requiredStatement": {
+    "label": {
+      "en": [
+        "Annotation model"
+      ]
+    },
+    "value": {
+      "en": [
+        "The annotation follows IIIF Cookbook Recipe 0139: a geographic GeoJSON body is associated with a Canvas fragment target. A second TextualBody supplies the historical description."
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "https://jptmoore.github.io/bedford/canvas/2",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "CO700-JAMAICA36 map"
+        ]
+      },
+      "width": 9642,
+      "height": 3972,
+      "items": [
+        {
+          "id": "https://jptmoore.github.io/bedford/canvas/2/painting",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://jptmoore.github.io/bedford/canvas/2/painting/image",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://jptmoore.github.io/bedford/canvas/2",
+              "body": {
+                "id": "https://jptmoore.github.io/bedford/CO700-JAMAICA36/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "width": 9642,
+                "height": 3972,
+                "service": [
+                  {
+                    "id": "https://jptmoore.github.io/bedford/CO700-JAMAICA36",
+                    "type": "ImageService3",
+                    "profile": "level0",
+                    "width": 9642,
+                    "height": 3972,
+                    "tiles": [
+                      {
+                        "width": 512,
+                        "scaleFactors": [
+                          1,
+                          2,
+                          4,
+                          8,
+                          16,
+                          32
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    } 
+  ]
+}

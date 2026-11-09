@@ -1,17 +1,18 @@
 # Bedford: Passages, 1804–1807
 
-The Bedford’s second and third passages plotted on a 1719 world map.
+The Bedford’s second and third passages plotted on a 1719 world map, and the stops the Bedford made in Jamaica.
 
 **[View the collection in Tamerlane](https://tamerlaneviewer.github.io/tamerlane/?iiif-content=https://jptmoore.github.io/bedford/iiif/passage.json)**
 
 ## About
 
-These maps show key points on the ship Bedford's second and third transatlantic voyages trafficking enslaved African people. The voyages took place between 1804 and 1807. A map from 1719 is used to show the routes.
+These maps show key points on the ship Bedford's second and third transatlantic voyages trafficking enslaved African people. The voyages took place between 1804 and 1807. A map from 1719 is used to show the routes. A map of Jamaica shows the points on the Bedford's voyages that intersect with Jamaica.
 
-The collection contains two IIIF Presentation 3.0 manifests:
+The collection contains three IIIF Presentation 3.0 manifests:
 
 - **Bedford: Second Passage, 1804–1805**
 - **Bedford: Third Passage, 1806–1807**
+- **Bedford: Jamaica Stops**
 
 To navigate through each story, click the text on the right-hand side of the viewer.
 
@@ -29,7 +30,7 @@ The resource was created using the following records held by The National Archiv
 
 ## Image reference
 
-The National Archives: WO78-419.
+The National Archives: WO78-419 (world map) and CO700-JAMAICA36 (Jamaica map).
 
 ## Attribution and usage
 

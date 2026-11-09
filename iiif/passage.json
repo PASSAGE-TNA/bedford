@@ -57,7 +57,7 @@
       },
       "value": {
         "en": [
-          "The National Archives: WO78-419."
+          "The National Archives: WO78-419; CO700-JAMAICA36."
         ]
       }
     },
@@ -129,6 +129,20 @@
       "summary": {
         "en": [
           "The Bedford’s third passage plotted on a 1719 world map."
+        ]
+      }
+    },
+    {
+      "id": "https://jptmoore.github.io/bedford/iiif/jamaicapassage.json",
+      "type": "Manifest",
+      "label": {
+        "en": [
+          "Bedford: Jamaica Stops"
+        ]
+      },
+      "summary": {
+        "en": [
+          "The stops the Bedford made in Jamaica."
         ]
       }
     }
