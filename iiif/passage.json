@@ -1,0 +1,136 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://jptmoore.github.io/bedford/passage.json",
+  "type": "Collection",
+  "label": {
+    "en": [
+      "Bedford: Passages, 1804–1807"
+    ]
+  },
+  "summary": {
+    "en": [
+      "The Bedford’s second and third passages plotted on a 1719 world map."
+    ]
+  },
+  "metadata": [
+    {
+      "label": {
+        "en": [
+          "About"
+        ]
+      },
+      "value": {
+        "en": [
+          "<p>These maps reveal key points on the ship Bedford's second and third transatlantic voyages trafficking enslaved African people. The voyages took place between 1804 and 1807, and we have used a map from 1719 to visualise the routes.</p>"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Content warning"
+        ]
+      },
+      "value": {
+        "en": [
+          "This resource covers sensitive topics and should be approached with care. It includes quotes from material that contains dehumanising and distressing descriptions of enslavement. "
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Catalogue reference"
+        ]
+      },
+      "value": {
+        "en": [
+          "The resource was created using the following collection of records. The National Archives: C 114/158; T 71/119; T 71/65; T 71/164; T 70/1583 and T 70/1584/74."
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Image reference"
+        ]
+      },
+      "value": {
+        "en": [
+          "The National Archives: WO78-419."
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Attribution and usage"
+        ]
+      },
+      "value": {
+        "en": [
+          "The National Archives",
+          "<span>You have permission to make copies of this work under a <a target=\"_top\" href=\"http://creativecommons.org/licenses/by-nc/4.0/\">Creative Commons, Attribution, Non-commercial license</a>.<br/><br/>Non-commercial use includes private study, academic research, teaching, and other activities that are not primarily intended for, or directed towards, commercial advantage or private monetary compensation. See the <a target=\"_top\" href=\"http://creativecommons.org/licenses/by-nc/4.0/legalcode\">Legal Code</a> for further information.<br/><br/>Image source should be attributed as specified in the full catalogue record. If no source is given the image should be attributed to The National Archives.</span>"
+        ]
+      }
+    }
+  ],
+  "provider": [
+    {
+      "id": "https://nationalarchives.gov.uk",
+      "type": "Agent",
+      "label": {
+        "en": [
+          "The National Archives",
+          "Bessant Drive, Richmond",
+          "TW9 4DU UK",
+          "T +44 (0)20 8876 3444",
+          "E research@nationalarchives.gov.uk",
+          "https://nationalarchives.gov.uk"
+        ]
+      },
+      "homepage": [
+        {
+          "id": "https://nationalarchives.gov.uk",
+          "type": "Text",
+          "label": {
+            "en": [
+              "Explore our collections"
+            ]
+          },
+          "format": "text/html"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "https://jptmoore.github.io/bedford/secondpassage-manifest.json",
+      "type": "Manifest",
+      "label": {
+        "en": [
+          "Bedford: Second Passage, 1804–1805"
+        ]
+      },
+      "summary": {
+        "en": [
+          "The Bedford’s second passage plotted on a 1719 world map."
+        ]
+      }
+    },
+    {
+      "id": "https://jptmoore.github.io/bedford/thirdpassage-manifest.json",
+      "type": "Manifest",
+      "label": {
+        "en": [
+          "Bedford: Third Passage, 1806–1807"
+        ]
+      },
+      "summary": {
+        "en": [
+          "The Bedford’s third passage plotted on a 1719 world map."
+        ]
+      }
+    }
+  ]
+}
