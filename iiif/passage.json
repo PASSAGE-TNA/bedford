@@ -105,7 +105,7 @@
   ],
   "items": [
     {
-      "id": "https://jptmoore.github.io/bedford/secondpassage-manifest.json",
+      "id": "https://jptmoore.github.io/bedford/secondpassage.json",
       "type": "Manifest",
       "label": {
         "en": [
@@ -119,7 +119,7 @@
       }
     },
     {
-      "id": "https://jptmoore.github.io/bedford/thirdpassage-manifest.json",
+      "id": "https://jptmoore.github.io/bedford/thirdpassage.json",
       "type": "Manifest",
       "label": {
         "en": [
