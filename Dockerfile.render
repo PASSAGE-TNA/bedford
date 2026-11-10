@@ -1,0 +1,41 @@
+# Single-container search backend for Passage on Render:
+# Nginx (public, $PORT) -> AnnoSearch (127.0.0.1:3000) -> Quickwit (127.0.0.1:7280).
+# Images are pinned by digest; bump the tag and digest together (see RENDER.md).
+
+# AnnoSearch 0.4.5, built from nationalarchives/annosearch@cbdf607 (same image IIIF-in-a-Box runs).
+FROM ghcr.io/nationalarchives/annosearch:latest@sha256:756670f8685272a1df795ea207b2c21351f37ddce7945763e204d94afd6382ea AS annosearch
+
+FROM quickwit/quickwit:v0.9.3@sha256:7c3f5061ea7c00921205c295833f152871d057ec1a9e4c9b1d36131dacc420bd AS quickwit
+
+FROM node:22-bookworm-slim@sha256:5ec23b7c622b00547753bc6ffd78085dd868a68aeb41c8e0a1418f033e13d96d
+
+# libssl3 is required by the Quickwit binary; nginx-light provides realip, limit_req and auth_request.
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends nginx-light libssl3 tini \
+    && rm -rf /var/lib/apt/lists/* /etc/nginx/sites-enabled /var/log/nginx/* \
+    && nginx -V 2>&1 | grep -q http_auth_request_module \
+    && nginx -V 2>&1 | grep -q http_realip_module
+
+COPY --from=quickwit /usr/local/bin/quickwit /usr/local/bin/quickwit
+COPY --from=annosearch /app /opt/annosearch
+
+COPY render/ /opt/passage/
+
+RUN chmod 0755 /opt/passage/start.sh \
+    && quickwit --version \
+    && node /opt/annosearch/dist/index.js version
+
+ENV NODE_ENV=production \
+    NODE_OPTIONS=--no-warnings \
+    QW_DISABLE_TELEMETRY=1 \
+    NO_COLOR=1 \
+    QW_CONFIG=/opt/passage/quickwit.yaml \
+    PORT=10000
+
+# Runs as the unprivileged "node" user from the base image; nothing needs root at runtime.
+USER node
+WORKDIR /tmp
+
+EXPOSE 10000
+
+ENTRYPOINT ["/usr/bin/tini", "--", "/opt/passage/start.sh"]
