@@ -1,0 +1,170 @@
+# Nginx for the Passage Render container, adapted from IIIF-in-a-Box nginx/conf/default.conf.
+# start.sh renders the @PLACEHOLDERS@ into /tmp/passage/nginx/nginx.conf.
+worker_processes 1;
+pid /tmp/passage/nginx/nginx.pid;
+error_log stderr warn;
+
+events {
+    worker_connections 256;
+}
+
+http {
+    server_tokens off;
+    default_type application/json;
+    charset utf-8;
+
+    log_format main '$remote_addr "$request" $status $body_bytes_sent $request_time "$http_origin" "$http_user_agent"';
+    access_log /dev/stdout main;
+
+    client_body_temp_path /tmp/passage/nginx/client_body;
+    proxy_temp_path       /tmp/passage/nginx/proxy;
+    fastcgi_temp_path     /tmp/passage/nginx/fastcgi;
+    uwsgi_temp_path       /tmp/passage/nginx/uwsgi;
+    scgi_temp_path        /tmp/passage/nginx/scgi;
+
+    # Read-only API: no request bodies, small headers, short client timeouts.
+    client_max_body_size 1k;
+    client_body_buffer_size 1k;
+    client_header_buffer_size 1k;
+    large_client_header_buffers 4 8k;
+    client_header_timeout 10s;
+    client_body_timeout 10s;
+    send_timeout 10s;
+    keepalive_timeout 15s;
+
+    # Render's proxy connects from private addresses; only those may set the client IP.
+    # real_ip_recursive takes the right-most untrusted X-Forwarded-For entry, so spoofed values are ignored.
+@REAL_IP_FROM@
+    real_ip_header X-Forwarded-For;
+    real_ip_recursive on;
+
+    # Same limits as IIIF-in-a-Box's iiif_api zone; 1m holds ~16k client addresses.
+    limit_req_zone $binary_remote_addr zone=iiif_api:1m rate=30r/s;
+    limit_req_status 429;
+
+    map $http_origin $cors_allow_origin {
+@CORS_ORIGINS@
+    }
+
+    map $status $allow_methods {
+        405     "GET, HEAD, OPTIONS";
+        default "";
+    }
+
+    upstream annosearch {
+        server 127.0.0.1:3000;
+        keepalive 8;
+    }
+
+    server {
+        listen 0.0.0.0:@PORT@ default_server;
+        server_name _;
+
+        # Every location inherits these; no location below may use add_header.
+        add_header Access-Control-Allow-Origin $cors_allow_origin always;
+        add_header Access-Control-Allow-Methods "GET, HEAD, OPTIONS" always;
+        add_header Access-Control-Allow-Headers "Accept, Content-Type" always;
+        add_header Access-Control-Max-Age 86400 always;
+        add_header Vary Origin always;
+        add_header Allow $allow_methods always;
+        add_header X-Content-Type-Options "nosniff" always;
+        add_header X-Frame-Options "DENY" always;
+        add_header Referrer-Policy "no-referrer" always;
+        add_header Content-Security-Policy "default-src 'none'; frame-ancestors 'none'" always;
+        add_header Cross-Origin-Resource-Policy "cross-origin" always;
+        add_header Strict-Transport-Security "max-age=31536000" always;
+
+        # Strip AnnoSearch's own CORS/security headers so clients never see duplicates.
+        proxy_hide_header Access-Control-Allow-Origin;
+        proxy_hide_header Access-Control-Allow-Methods;
+        proxy_hide_header Access-Control-Allow-Headers;
+        proxy_hide_header Access-Control-Allow-Credentials;
+        proxy_hide_header X-Powered-By;
+        proxy_hide_header X-Content-Type-Options;
+        proxy_hide_header X-Frame-Options;
+        proxy_hide_header X-XSS-Protection;
+        proxy_hide_header Referrer-Policy;
+
+        proxy_http_version 1.1;
+        proxy_set_header Connection "";
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $remote_addr;
+        proxy_set_header X-Forwarded-Proto https;
+        proxy_set_header X-Forwarded-Host "";
+        proxy_set_header Forwarded "";
+        proxy_pass_request_body off;
+        proxy_set_header Content-Length "";
+        proxy_connect_timeout 2s;
+        proxy_send_timeout 10s;
+        proxy_read_timeout 15s;
+
+        error_page 400 = @bad_request;
+        error_page 404 = @not_found;
+        error_page 405 = @method_not_allowed;
+        error_page 413 414 = @too_large;
+        error_page 429 = @rate_limited;
+        error_page 500 502 503 504 = @unavailable;
+
+        if ($request_method !~ ^(GET|HEAD|OPTIONS)$) {
+            return 405;
+        }
+
+        # IIIF Content Search API 2.0 routes for the configured Passage indexes only.
+        location ~ ^/annosearch/(@INDEX_PATTERN@)/(search|autocomplete)$ {
+            limit_req zone=iiif_api burst=100;
+
+            if ($request_method = OPTIONS) {
+                return 204;
+            }
+
+            # Hide AnnoSearch 404/5xx bodies (they can include internal URLs); keep its 400 validation messages.
+            proxy_intercept_errors on;
+            error_page 404 = @not_found;
+            error_page 429 = @rate_limited;
+            error_page 500 502 503 504 = @unavailable;
+            rewrite ^/annosearch(/.*)$ $1 break;
+            proxy_pass http://annosearch;
+        }
+
+        # 200 only when AnnoSearch answers a real search against the Passage index in Quickwit.
+        location = /health {
+            access_log off;
+            auth_request /_ready;
+            default_type text/plain;
+            root /opt/passage/www;
+            try_files /health.txt =503;
+        }
+
+        location = /_ready {
+            internal;
+            proxy_pass http://annosearch/@HEALTH_INDEX@/search?q=passage;
+            proxy_connect_timeout 1s;
+            proxy_read_timeout 5s;
+        }
+
+        # Everything else, including AnnoSearch's /version and Quickwit, is not exposed.
+        location / {
+            return 404;
+        }
+
+        location @bad_request {
+            return 400 '{"error":"Bad request"}\n';
+        }
+        location @not_found {
+            return 404 '{"error":"Not found"}\n';
+        }
+        location @method_not_allowed {
+            return 405 '{"error":"Method not allowed"}\n';
+        }
+        location @too_large {
+            return 413 '{"error":"Request too large"}\n';
+        }
+        location @rate_limited {
+            return 429 '{"error":"Too many requests"}\n';
+        }
+        location @unavailable {
+            return 503 '{"error":"Search service unavailable"}\n';
+        }
+    }
+}
