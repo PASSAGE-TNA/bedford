@@ -3,7 +3,7 @@
     "http://geojson.org/geojson-ld/geojson-context.jsonld",
     "http://iiif.io/api/presentation/3/context.json"
   ],
-  "id": "https://jptmoore.github.io/bedford/iiif/secondpassage.json",
+  "id": "https://passage-tna.github.io/bedford/iiif/secondpassage.json",
   "type": "Manifest",
   "label": {
     "en": [
@@ -118,7 +118,7 @@
   },
   "items": [
     {
-      "id": "https://jptmoore.github.io/bedford/canvas/1",
+      "id": "https://passage-tna.github.io/bedford/canvas/1",
       "type": "Canvas",
       "label": {
         "en": [
@@ -129,23 +129,23 @@
       "height": 5621,
       "items": [
         {
-          "id": "https://jptmoore.github.io/bedford/canvas/1/painting",
+          "id": "https://passage-tna.github.io/bedford/canvas/1/painting",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://jptmoore.github.io/bedford/canvas/1/painting/image",
+              "id": "https://passage-tna.github.io/bedford/canvas/1/painting/image",
               "type": "Annotation",
               "motivation": "painting",
-              "target": "https://jptmoore.github.io/bedford/canvas/1",
+              "target": "https://passage-tna.github.io/bedford/canvas/1",
               "body": {
-                "id": "https://jptmoore.github.io/bedford/W078-419/full/max/0/default.jpg",
+                "id": "https://passage-tna.github.io/bedford/W078-419/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "width": 9600,
                 "height": 5621,
                 "service": [
                   {
-                    "id": "https://jptmoore.github.io/bedford/W078-419",
+                    "id": "https://passage-tna.github.io/bedford/W078-419",
                     "type": "ImageService3",
                     "profile": "level0",
                     "width": 9600,
@@ -172,11 +172,11 @@
       ],
       "annotations": [
         {
-          "id": "https://jptmoore.github.io/bedford/canvas/1/page/1",
+          "id": "https://passage-tna.github.io/bedford/canvas/1/page/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://jptmoore.github.io/bedford/canvas/1/annotation/1",
+              "id": "https://passage-tna.github.io/bedford/canvas/1/annotation/1",
               "type": "Annotation",
               "motivation": [
                 "tagging",
@@ -210,10 +210,10 @@
                   "value": "<p><b>01/09/1804 — The Bedford sails from Gravesend</b></p> <p>'The Bedford' embarked on its second voyage trafficking enslaved Africans in September 1804. William Beamish Lane continued as captain with an international crew of twenty-three men. This included Emile Josa who was from the East Indies and served as the ship's cook. An agreement signed by the crew known as a Muster Roll specified their food provisions and other terms of their employment.</p>"
                 }
               ],
-              "target": "https://jptmoore.github.io/bedford/canvas/1#xywh=5324,1944,66,33"
+              "target": "https://passage-tna.github.io/bedford/canvas/1#xywh=5324,1944,66,33"
             },
             {
-              "id": "https://jptmoore.github.io/bedford/canvas/1/annotation/2",
+              "id": "https://passage-tna.github.io/bedford/canvas/1/annotation/2",
               "type": "Annotation",
               "motivation": [
                 "tagging",
@@ -246,10 +246,10 @@
                   "value": "<p><b>19/01/1805 — The Bedford reaches West Africa</b></p> <p>By 19 January 1805, 'the Bedford' had arrived in West Africa where it began to traffic enslaved people. Captain Lane had been instructed to sail to the coast of Angola and if he did not make it that far to land at Mayumba in what is now Gabon. Given where the ship later reached, it seems most likely that 'the Bedford' arrived at the mouth of the Congo River as Captain Lane had planned.</p>"
                 }
               ],
-              "target": "https://jptmoore.github.io/bedford/canvas/1#xywh=5591,3647,189,83"
+              "target": "https://passage-tna.github.io/bedford/canvas/1#xywh=5591,3647,189,83"
             },
             {
-              "id": "https://jptmoore.github.io/bedford/canvas/1/annotation/3",
+              "id": "https://passage-tna.github.io/bedford/canvas/1/annotation/3",
               "type": "Annotation",
               "motivation": [
                 "tagging",
@@ -283,10 +283,10 @@
                   "value": "<p><b>17/02/1805 — Trafficking enslaved people onboard</b></p> <p>'The Bedford' was in the upstream port town of Boma on 17 February 1805. By this point, 169 enslaved people had been trafficked onboard. That day a further three women and twenty-three men were taken captive on the ship.</p>"
                 }
               ],
-              "target": "https://jptmoore.github.io/bedford/canvas/1#xywh=5650,3608,189,83"
+              "target": "https://passage-tna.github.io/bedford/canvas/1#xywh=5650,3608,189,83"
             },
             {
-              "id": "https://jptmoore.github.io/bedford/canvas/1/annotation/4",
+              "id": "https://passage-tna.github.io/bedford/canvas/1/annotation/4",
               "type": "Annotation",
               "motivation": [
                 "tagging",
@@ -320,10 +320,10 @@
                   "value": "<p><b>25/02/1805 — Leaving West Africa</b></p> <p>By the end of February, 'The Bedford' was preparing to leave from the mouth of the Congo River. It was carrying 230 enslaved people. .</p>"
                 }
               ],
-              "target": "https://jptmoore.github.io/bedford/canvas/1#xywh=5591,3647,189,83"
+              "target": "https://passage-tna.github.io/bedford/canvas/1#xywh=5591,3647,189,83"
             },
             {
-              "id": "https://jptmoore.github.io/bedford/canvas/1/annotation/5",
+              "id": "https://passage-tna.github.io/bedford/canvas/1/annotation/5",
               "type": "Annotation",
               "motivation": [
                 "tagging",
@@ -357,10 +357,10 @@
                   "value": "<p><b>12/03/1805 — Rising up</b></p> <p>Two enslaved men were 'shot during an insurrection' according to a doctor's journal. A further two enslaved men died of worms during the passage.</p>"
                 }
               ],
-              "target": "https://jptmoore.github.io/bedford/canvas/1#xywh=4251,3320,157,76"
+              "target": "https://passage-tna.github.io/bedford/canvas/1#xywh=4251,3320,157,76"
             },
             {
-              "id": "https://jptmoore.github.io/bedford/canvas/1/annotation/6",
+              "id": "https://passage-tna.github.io/bedford/canvas/1/annotation/6",
               "type": "Annotation",
               "motivation": [
                 "tagging",
@@ -394,10 +394,10 @@
                   "value": "<p><b>13/04/1805 — Reaching Surinam</b></p> <p>'The Bedford' 'arrived with 224 Slaves' and customs documents granted permission for the ship to depart Surinam for Demerara (in what is now Guyana). The documents noted that the inward bound cargo of enslaved people had not been sold in Surinam.</p>"
                 }
               ],
-              "target": "https://jptmoore.github.io/bedford/canvas/1#xywh=3797,3368,179,72"
+              "target": "https://passage-tna.github.io/bedford/canvas/1#xywh=3797,3368,179,72"
             },
              {
-              "id": "https://jptmoore.github.io/bedford/canvas/1/annotation/7",
+              "id": "https://passage-tna.github.io/bedford/canvas/1/annotation/7",
               "type": "Annotation",
               "motivation": [
                 "tagging",
@@ -431,10 +431,10 @@
                   "value": "<p><b>14/04/1805 — Brams Point fort</b></p> <p>Before 'the Bedford' left Surinam it passed through Brams Point fort (also known as Braamspunt) paying for a fort pass.</p>"
                 }
               ],
-              "target": "https://jptmoore.github.io/bedford/canvas/1#xywh=3797,3368,179,72"
+              "target": "https://passage-tna.github.io/bedford/canvas/1#xywh=3797,3368,179,72"
             },
              {
-              "id": "https://jptmoore.github.io/bedford/canvas/1/annotation/8",
+              "id": "https://passage-tna.github.io/bedford/canvas/1/annotation/8",
               "type": "Annotation",
               "motivation": [
                 "tagging",
@@ -468,10 +468,10 @@
                   "value": "<p><b>16/04/1805 — Passing Demerara</b></p> <p>In Demerara, Captain Lane reported that there was 'No demand for Slaves Cotton Crop has failed proceed to Barbados tmrw: probable demand for Men there or must go to Jamaica'. Around this time he paid for 250 bunches of plantains, which were likely bought to feed the enslaved people who were still being held captive onboard. By this point, many of them had been on the ship for over two months and some for almost three months.</p>"
                 }
               ],
-              "target": "https://jptmoore.github.io/bedford/canvas/1#xywh=3695,3310,161,78"
+              "target": "https://passage-tna.github.io/bedford/canvas/1#xywh=3695,3310,161,78"
             },
              {
-              "id": "https://jptmoore.github.io/bedford/canvas/1/annotation/9",
+              "id": "https://passage-tna.github.io/bedford/canvas/1/annotation/9",
               "type": "Annotation",
               "motivation": [
                 "tagging",
@@ -505,10 +505,10 @@
                   "value": "<p><b>21/04/1805 - Stopping at Barbados</b></p> <p>'The Bedford' was anchored at the Port of Bridgetown, but cleared to depart the next day. Customs documents note that no goods were bought or sold while 'the Bedford' was in Barbados, which included enslaved people. Captain Lane reported that 'No sale [of enslaved people] can be made above £52 in 12 15 & 18 Mths proceed to St Vincents'.</p>"
                 }
               ],
-              "target": "https://jptmoore.github.io/bedford/canvas/1#xywh=3777,3193,134,36"
+              "target": "https://passage-tna.github.io/bedford/canvas/1#xywh=3777,3193,134,36"
             },
              {
-              "id": "https://jptmoore.github.io/bedford/canvas/1/annotation/10",
+              "id": "https://passage-tna.github.io/bedford/canvas/1/annotation/10",
               "type": "Annotation",
               "motivation": [
                 "tagging",
@@ -542,10 +542,10 @@
                   "value": "<p><b>24/04/1805 — Stopping at St Vincent</b></p> <p>'The Bedford' was next anchored in Kingstown, St Vincent. This information comes from customs documents granting 'the Bedford' permission to proceed to Jamaica and a document detailing Harbour Master’s dues and customs documents granting permission to proceed to Jamaica.</p>"
                 }
               ],
-              "target": "https://jptmoore.github.io/bedford/canvas/1#xywh=3741,3212,141,41"
+              "target": "https://passage-tna.github.io/bedford/canvas/1#xywh=3741,3212,141,41"
             },
              {
-              "id": "https://jptmoore.github.io/bedford/canvas/1/annotation/11",
+              "id": "https://passage-tna.github.io/bedford/canvas/1/annotation/11",
               "type": "Annotation",
               "motivation": [
                 "tagging",
@@ -579,10 +579,10 @@
                   "value": "<p><b>07/05-13/06/1805 — Navigating Kingston</b></p> <p>'The Bedford' arrived into Kingston, Jamaica on 7 May 1805. It stayed there for over a month, leaving on 13 June 1805. While in Kingston, 2,350 plantains were bought for the ship along with other provisions such as fruit. By that point some of the enslaved people had been held captive onboard for over five months.</p> <p>When the ship left Kingston, there were pilotage fees to pay. Marine pilots with local knowledge would have been employed to guide the ship in and out of the port safely. In Jamaica, many of the pilots in this period were of African descent and could be both free or enslaved.</p>"
                 }
               ],
-              "target": "https://jptmoore.github.io/bedford/canvas/1#xywh=3263,3060,144,61"
+              "target": "https://passage-tna.github.io/bedford/canvas/1#xywh=3263,3060,144,61"
             },
              {
-              "id": "https://jptmoore.github.io/bedford/canvas/1/annotation/12",
+              "id": "https://passage-tna.github.io/bedford/canvas/1/annotation/12",
               "type": "Annotation",
               "motivation": [
                 "tagging",
@@ -616,10 +616,10 @@
                   "value": "<p><b>One enslaved boy's journey</b></p> <p>'While 'the Bedford' was in Kingston, the enslaved people trafficked onboard began to be sold to enslavers and plantations on the island. This included one enslaved male who was trafficked to Port Royal by Robert Ambrose. In 1817, Ambrose registered six enslaved individuals as his 'property'. This included two young men born in Africa, George and Edward, who were both said to be twenty four years old. One of these men was almost certainly trafficked from the Congo River by 'the Bedford' when they were around just twelve years old.</p>"
                 }
               ],
-              "target": "https://jptmoore.github.io/bedford/canvas/1#xywh=3263,3060,144,61"
+              "target": "https://passage-tna.github.io/bedford/canvas/1#xywh=3263,3060,144,61"
             },
             {
-              "id": "https://jptmoore.github.io/bedford/canvas/1/annotation/12",
+              "id": "https://passage-tna.github.io/bedford/canvas/1/annotation/12",
               "type": "Annotation",
               "motivation": [
                 "tagging",
@@ -653,10 +653,10 @@
                   "value": "<p><b>One enslaved boy's journey</b></p> <p>'While 'the Bedford' was in Kingston, the enslaved people trafficked onboard began to be sold to enslavers and plantations on the island. This included one enslaved male who was trafficked to Port Royal by Robert Ambrose. In 1817, Ambrose registered six enslaved individuals as his 'property'. This included two young men born in Africa, George and Edward, who were both said to be twenty four years old. One of these men was almost certainly trafficked from the Congo River by 'the Bedford' when they were around just twelve years old.</p>"
                 }
               ],
-              "target": "https://jptmoore.github.io/bedford/canvas/1#xywh=3263,3060,144,61"
+              "target": "https://passage-tna.github.io/bedford/canvas/1#xywh=3263,3060,144,61"
             },
             {
-              "id": "https://jptmoore.github.io/bedford/canvas/1/annotation/13",
+              "id": "https://passage-tna.github.io/bedford/canvas/1/annotation/13",
               "type": "Annotation",
               "motivation": [
                 "tagging",
@@ -690,10 +690,10 @@
                   "value": "<p><b>15/06/1805 - Docking in Bluefields</b></p> <p>As 'the Bedford' sailed along the southwest coast of Jamaica, further plantains and yams were bought for the ship in Bluefields.</p>"
                 }
               ],
-              "target": "https://jptmoore.github.io/bedford/canvas/1#xywh=3263,3060,144,61"
+              "target": "https://passage-tna.github.io/bedford/canvas/1#xywh=3263,3060,144,61"
             },
             {
-              "id": "https://jptmoore.github.io/bedford/canvas/1/annotation/14",
+              "id": "https://passage-tna.github.io/bedford/canvas/1/annotation/14",
               "type": "Annotation",
               "motivation": [
                 "tagging",
@@ -727,10 +727,10 @@
                   "value": "<p><b>16/06-01/07/1805 - Trafficking enslaved people to plantations from Savanna-la-Mar</b></p> <p>'The Bedford' received a permit from the Custom House to 'land one hundred and seventy five' enslaved people in Savanna-la-mar having sailed from Kingston.</p>"
                 }
               ],
-              "target": "https://jptmoore.github.io/bedford/canvas/1#xywh=3263,3060,144,61"
+              "target": "https://passage-tna.github.io/bedford/canvas/1#xywh=3263,3060,144,61"
             },
             {
-              "id": "https://jptmoore.github.io/bedford/canvas/1/annotation/15",
+              "id": "https://passage-tna.github.io/bedford/canvas/1/annotation/15",
               "type": "Annotation",
               "motivation": [
                 "tagging",
@@ -764,10 +764,10 @@
                   "value": "<p><b>02-06/07/1805 - 'Bedford' and 'Chance'</b></p> <p>By early July, the Bedford was in Black River in St Elizabeth parish. Captain Lane was offered three caulkers for hire to be sent to Black River from Kingston to repair the ship, making it watertight by sealing any holes. Two enslaved people were said to still be onboard on 2 July 1805 and this was probably a man referred to as 'Chance' and a boy referred to as 'Bedford' after the ship. They were kept onboard as enslaved crew members, with sailors clothes bought for them at the beginning of July. A wage book shows they were not paid for their service onboard. In fact it was said that 'the Man [Chance] will save his Price in Wages' meaning that the money saved in having him take the place of a crew member would be equal to the money made had he been sold into plantation slavery in Jamaica.</p>"
                 }
               ],
-              "target": "https://jptmoore.github.io/bedford/canvas/1#xywh=3263,3060,144,61"
+              "target": "https://passage-tna.github.io/bedford/canvas/1#xywh=3263,3060,144,61"
             },
             {
-              "id": "https://jptmoore.github.io/bedford/canvas/1/annotation/16",
+              "id": "https://passage-tna.github.io/bedford/canvas/1/annotation/16",
               "type": "Annotation",
               "motivation": [
                 "tagging",
@@ -801,10 +801,10 @@
                   "value": "<p><b>The products of enslaved labour</b></p> <p>Before the Bedford left Jamaica, it was loaded with goods to ship back to England. This included produce harvested on plantations by enslaved people which was being shipped on behalf of Jamaican plantation owners. A ship's manifest noted that it was carrying 'one hundred twenty three Hogsheads Sugar, Forty eight Casks and Three Hundred & Seventeen Bags Coffee, Nineteen Tons Logwood and Four Tons Fustick Twelve Casks Castor Oil & one quarter of a Ton Ivory Imported from the coast of Africa'. The majority of the sugar and coffee can be traced to plantations in St Elizabeth parish, of which Black River is the capital, and Manchester, the next parish over to the east. These included plantations and enslaved people that were managed or owned by William Rowe. Ten casks of the coffee shipped came from Henry Palmer's coffee plantations in Manchester, including Greenland. By 1817, 127 individuals were enslaved at these plantations whose bonded labour cultivated the coffee.</p>"
                 }
               ],
-              "target": "https://jptmoore.github.io/bedford/canvas/1#xywh=3263,3060,144,61"
+              "target": "https://passage-tna.github.io/bedford/canvas/1#xywh=3263,3060,144,61"
             },
             {
-              "id": "https://jptmoore.github.io/bedford/canvas/1/annotation/17",
+              "id": "https://passage-tna.github.io/bedford/canvas/1/annotation/17",
               "type": "Annotation",
               "motivation": [
                 "tagging",
@@ -838,10 +838,10 @@
                   "value": "<p><b>20/07/1805 - Dues at Savanna-la-Mar</b></p> <p>The ship cleared out of the port of Savanna-la-Mar where it paid harbour dues.</p>"
                 }
               ],
-              "target": "https://jptmoore.github.io/bedford/canvas/1#xywh=3263,3060,144,61"
+              "target": "https://passage-tna.github.io/bedford/canvas/1#xywh=3263,3060,144,61"
             },
             {
-              "id": "https://jptmoore.github.io/bedford/canvas/1/annotation/18",
+              "id": "https://passage-tna.github.io/bedford/canvas/1/annotation/18",
               "type": "Annotation",
               "motivation": [
                 "tagging",
@@ -875,10 +875,10 @@
                   "value": "<p><b>Unknown date - Leaving Jamaica</b></p> <p>'The Bedford' departed Black River, sailing for England.</p>"
                 }
               ],
-              "target": "https://jptmoore.github.io/bedford/canvas/1#xywh=3263,3060,144,61"
+              "target": "https://passage-tna.github.io/bedford/canvas/1#xywh=3263,3060,144,61"
             },
             {
-              "id": "https://jptmoore.github.io/bedford/canvas/1/annotation/19",
+              "id": "https://passage-tna.github.io/bedford/canvas/1/annotation/19",
               "type": "Annotation",
               "motivation": [
                 "tagging",
@@ -912,10 +912,10 @@
                   "value": "<p><b>18/10/1805 - Repairs back in England</b></p> <p>'The Bedford' arrives back on the South-West coast of England where it was repaired.</p>"
                 }
               ],
-              "target": "https://jptmoore.github.io/bedford/canvas/1#xywh=5158,1995,88,30"
+              "target": "https://passage-tna.github.io/bedford/canvas/1#xywh=5158,1995,88,30"
             },
             {
-              "id": "https://jptmoore.github.io/bedford/canvas/1/annotation/20",
+              "id": "https://passage-tna.github.io/bedford/canvas/1/annotation/20",
               "type": "Annotation",
               "motivation": [
                 "tagging",
@@ -949,7 +949,7 @@
                   "value": "<p><b>02/11/1805 - Stopping in St. Mawes</b></p> <p>The ship docked in St. Mawes where Captain Lane paid two Shillings and Six-pence in Harbour Dues.</p>"
                 }
               ],
-              "target": "https://jptmoore.github.io/bedford/canvas/1#xywh=5158,1995,88,30"
+              "target": "https://passage-tna.github.io/bedford/canvas/1#xywh=5158,1995,88,30"
             }
           ]
         }

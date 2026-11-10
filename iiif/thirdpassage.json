@@ -3,7 +3,7 @@
     "http://geojson.org/geojson-ld/geojson-context.jsonld",
     "http://iiif.io/api/presentation/3/context.json"
   ],
-  "id": "https://jptmoore.github.io/bedford/iiif/thirdpassage.json",
+  "id": "https://passage-tna.github.io/bedford/iiif/thirdpassage.json",
   "type": "Manifest",
   "label": {
     "en": [
@@ -118,7 +118,7 @@
   },
   "items": [
     {
-      "id": "https://jptmoore.github.io/bedford/canvas/1",
+      "id": "https://passage-tna.github.io/bedford/canvas/1",
       "type": "Canvas",
       "label": {
         "en": [
@@ -129,23 +129,23 @@
       "height": 5621,
       "items": [
         {
-          "id": "https://jptmoore.github.io/bedford/canvas/1/painting",
+          "id": "https://passage-tna.github.io/bedford/canvas/1/painting",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://jptmoore.github.io/bedford/canvas/1/painting/image",
+              "id": "https://passage-tna.github.io/bedford/canvas/1/painting/image",
               "type": "Annotation",
               "motivation": "painting",
-              "target": "https://jptmoore.github.io/bedford/canvas/1",
+              "target": "https://passage-tna.github.io/bedford/canvas/1",
               "body": {
-                "id": "https://jptmoore.github.io/bedford/W078-419/full/max/0/default.jpg",
+                "id": "https://passage-tna.github.io/bedford/W078-419/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "width": 9600,
                 "height": 5621,
                 "service": [
                   {
-                    "id": "https://jptmoore.github.io/bedford/W078-419",
+                    "id": "https://passage-tna.github.io/bedford/W078-419",
                     "type": "ImageService3",
                     "profile": "level0",
                     "width": 9600,
@@ -172,11 +172,11 @@
       ],
       "annotations": [
         {
-          "id": "https://jptmoore.github.io/bedford/canvas/1/page/1",
+          "id": "https://passage-tna.github.io/bedford/canvas/1/page/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://jptmoore.github.io/bedford/canvas/1/annotation/1",
+              "id": "https://passage-tna.github.io/bedford/canvas/1/annotation/1",
               "type": "Annotation",
               "motivation": [
                 "tagging",
@@ -210,10 +210,10 @@
                   "value": "<p><b>December 1805 - July 1806 — John Bedford's time in London</b></p> <p>An enslaved African boy, referred to as 'Boy Bedford' and later John Bedford after the ship, had been forced to serve amongst its crew after being trafficked in early 1805. He remained onboard when 'the Bedford' arrived back in London in December 1805.</p> <p>John Bedford stayed in London for over six months. There are fragments of his time in the city, including an account submitted by the ship's previous captain, William Lane, where he noted paying for 'a Weeks board and one pair [of] Shoes for the Boy Bedford' in mid-December. Later on receipts for slops (mass-produced sailor’s clothing) mentioned clothes that were bought for him in London in May and June ahead of the ship setting sail on its final transatlantic voyage.</p> <p> By the nineteenth century, London had a growing Black population with historians estimating that there were around 15,000 Black servants in the city, as well as Black sailors, students and musicians.  Black Londoners were both free and unfree, often with similar backgrounds to John Bedford. The legality of slavery in Britain had been contested in the courts, but adverts throughout the eighteenth century document enslaved runaways across the country. </p> "
                 }
               ],
-              "target": "https://jptmoore.github.io/bedford/canvas/1#xywh=5303,1927,81,30"
+              "target": "https://passage-tna.github.io/bedford/canvas/1#xywh=5303,1927,81,30"
             },
             {
-              "id": "https://jptmoore.github.io/bedford/canvas/1/annotation/2",
+              "id": "https://passage-tna.github.io/bedford/canvas/1/annotation/2",
               "type": "Annotation",
               "motivation": [
                 "tagging",
@@ -246,10 +246,10 @@
                   "value": "<p><b>07/07/1806 — 'The Bedford' departs Gravesend</b></p> <p>'The Bedford' embarked on its third voyage trafficking enslaved Africans in early July 1806, captained by Gilbert Wenman. A 'voyage book' lists all of the merchandise it was carrying onboard that would be traded to traffic enslaved Africans.</p><p>The merchandise included guns and other weaponry, gunpowder, metalware, pipes, crockery, beads, tobacco leaves, tea, sugar, and brandy. There were also a wide range of East Indian textiles including satin, cotton and chintz, as well as embellished clothing. The ship also carried provisions for the crew and the enslaved people they planned to traffic.</p>"
                 }
               ],
-              "target": "https://jptmoore.github.io/bedford/canvas/1#xywh=5325,1936,81,30"
+              "target": "https://passage-tna.github.io/bedford/canvas/1#xywh=5325,1936,81,30"
             },
             {
-              "id": "https://jptmoore.github.io/bedford/canvas/1/annotation/3",
+              "id": "https://passage-tna.github.io/bedford/canvas/1/annotation/3",
               "type": "Annotation",
               "motivation": [
                 "tagging",
@@ -283,10 +283,10 @@
                   "value": "<p><b>12/07/1806 — 'Contrary wind' in Deal</b></p> <p>The ship had to remain off the coast of Deal in Kent for 'some weeks' due to 'contrary wind'.</p>"
                 }
               ],
-              "target": "https://jptmoore.github.io/bedford/canvas/1#xywh=5336,1946,81,30"
+              "target": "https://passage-tna.github.io/bedford/canvas/1#xywh=5336,1946,81,30"
             },
             {
-              "id": "https://jptmoore.github.io/bedford/canvas/1/annotation/4",
+              "id": "https://passage-tna.github.io/bedford/canvas/1/annotation/4",
               "type": "Annotation",
               "motivation": [
                 "tagging",
@@ -320,10 +320,10 @@
                   "value": "<p><b>24/07/1806 - 17/08/1806 — 'The Bedford' docked in Portsmouth</b></p> <p>'The Bedford' faced further delays in Portsmouth. During this time a 'Guernsey Frock' was purchased for John Bedford, which is a a heavy, weather-resistant, woolen jumper traditionally knitted in Guernsey. </p>"
                 }
               ],
-              "target": "https://jptmoore.github.io/bedford/canvas/1#xywh=5269,1963,81,30"
+              "target": "https://passage-tna.github.io/bedford/canvas/1#xywh=5269,1963,81,30"
             },
             {
-              "id": "https://jptmoore.github.io/bedford/canvas/1/annotation/5",
+              "id": "https://passage-tna.github.io/bedford/canvas/1/annotation/5",
               "type": "Annotation",
               "motivation": [
                 "tagging",
@@ -357,10 +357,10 @@
                   "value": "<p><b>17/08/1806 — St Helen's Fort</b></p> <p>Captain Wenman wrote that the 'Bedford' was now 'underway with a light breeze from the Eastwards & a hope of its continuance with a speedy & Successful Passage'.</p>"
                 }
               ],
-              "target": "https://jptmoore.github.io/bedford/canvas/1#xywh=5272,1991,81,30"
+              "target": "https://passage-tna.github.io/bedford/canvas/1#xywh=5272,1991,81,30"
             },
             {
-              "id": "https://jptmoore.github.io/bedford/canvas/1/annotation/6",
+              "id": "https://passage-tna.github.io/bedford/canvas/1/annotation/6",
               "type": "Annotation",
               "motivation": [
                 "tagging",
@@ -394,10 +394,10 @@
                   "value": "<p><b>09/09/1806 — Madeira</b></p> <p>'The Bedford' sailed via Madeira where Captain Wenman purchased fortified wine.</p>"
                 }
               ],
-              "target": "https://jptmoore.github.io/bedford/canvas/1#xywh=4824,2596,141,61"
+              "target": "https://passage-tna.github.io/bedford/canvas/1#xywh=4824,2596,141,61"
             },
              {
-              "id": "https://jptmoore.github.io/bedford/canvas/1/annotation/7",
+              "id": "https://passage-tna.github.io/bedford/canvas/1/annotation/7",
               "type": "Annotation",
               "motivation": [
                 "tagging",
@@ -431,10 +431,10 @@
                   "value": "<p><b>Arrival at the Island of Gorée</b></p> <p>In West Africa, the ship first stopped at the Island of Gorée, off the coast of Dakar, Senegal, where Wenman and his crew began to traffic enslaved Africans.</p><p>Starting in the 15th century, Gorée Island was the largest slave-trading centre on the African coast. It had been occupied by multiple European empires including the British which ruled the island when 'the Bedford' arrived in 1806. </p>"
                 }
               ],
-              "target": "https://jptmoore.github.io/bedford/canvas/1#xywh=4818,3153,105,51"
+              "target": "https://passage-tna.github.io/bedford/canvas/1#xywh=4818,3153,105,51"
             },
              {
-              "id": "https://jptmoore.github.io/bedford/canvas/1/annotation/8",
+              "id": "https://passage-tna.github.io/bedford/canvas/1/annotation/8",
               "type": "Annotation",
               "motivation": [
                 "tagging",
@@ -461,10 +461,10 @@
                   "value": "<p><b>September - December 1806 — Windward and Gold Coast trafficking</b></p> <p>'The Bedford' initially trafficked twenty men and nine women onboard over the course of 73 days. This began at Gorée, but the ship had then been instructed to work with local slave traders along the Windward and Gold Coast, most of whom were European.</p><p>The Windward Coast, as Europeans knew it, stretched between Cape Mount and the Assini River, covering parts of what is now Sierra Leone, Liberia, and Côte d'Ivoire. The region referred to by Europeans as the Gold Coast spanned much of the coastline of present-day Ghana from Axim to the Volta River.</p><p>Many of the African men and women trafficked onboard the Bedford would have faced longer passages of enslavement from the interior.</p>"
                 }
               ],
-              "target": "https://jptmoore.github.io/bedford/canvas/1#xywh=5004,3329,473,161"
+              "target": "https://passage-tna.github.io/bedford/canvas/1#xywh=5004,3329,473,161"
             },
              {
-              "id": "https://jptmoore.github.io/bedford/canvas/1/annotation/9",
+              "id": "https://passage-tna.github.io/bedford/canvas/1/annotation/9",
               "type": "Annotation",
               "motivation": [
                 "tagging",
@@ -498,10 +498,10 @@
                   "value": "<p><b>04/12/1806 - Cape Coast Castle</b></p> <p>The ship stopped at Cape Coast Castle (in modern-day Ghana) on 4 December 1806. Cape Coast Castle was the largest British fort used to hold enslaved Africans captive before they were trafficked onto ships.</p>"
                 }
               ],
-              "target": "https://jptmoore.github.io/bedford/canvas/1#xywh=5238,3387,110,44"
+              "target": "https://passage-tna.github.io/bedford/canvas/1#xywh=5238,3387,110,44"
             },
              {
-              "id": "https://jptmoore.github.io/bedford/canvas/1/annotation/10",
+              "id": "https://passage-tna.github.io/bedford/canvas/1/annotation/10",
               "type": "Annotation",
               "motivation": [
                 "tagging",
@@ -528,10 +528,10 @@
                   "value": "<p><b>December 1806 — Leeward trafficking</b></p> <p>'The Bedford' went on to traffic another twenty-two men and ten women further down the West African coast of present-day Ghana beyond Cape Coast Castle. </p>"
                 }
               ],
-              "target": "https://jptmoore.github.io/bedford/canvas/1#xywh=5238,3360,300,120"
+              "target": "https://passage-tna.github.io/bedford/canvas/1#xywh=5238,3360,300,120"
             },
              {
-              "id": "https://jptmoore.github.io/bedford/canvas/1/annotation/11",
+              "id": "https://passage-tna.github.io/bedford/canvas/1/annotation/11",
               "type": "Annotation",
               "motivation": [
                 "tagging",
@@ -565,10 +565,10 @@
                   "value": "<p><b>28/12/1806 — Cape Coast Castle</b></p> <p>The ship returned to Cape Coast Castle. Its arrival was recorded by the 'Company of Merchants Trading with Africa' who controlled the fort.</p> <p>When the ship left Kingston, there were pilotage fees to pay. Marine pilots with local knowledge would have been employed to guide the ship in and out of the port safely. In Jamaica, many of the pilots in this period were of African descent and could be both free or enslaved.</p>"
                 }
               ],
-              "target": "https://jptmoore.github.io/bedford/canvas/1#xywh=5238,3387,110,44"
+              "target": "https://passage-tna.github.io/bedford/canvas/1#xywh=5238,3387,110,44"
             },
              {
-              "id": "https://jptmoore.github.io/bedford/canvas/1/annotation/12",
+              "id": "https://passage-tna.github.io/bedford/canvas/1/annotation/12",
               "type": "Annotation",
               "motivation": [
                 "tagging",
@@ -602,10 +602,10 @@
                   "value": "<p><b>01/02/1807 - Strategies of division</b></p> <p>Wenman and his crew had been trafficking small numbers of enslaved men and women onboard over several months. This was an intentional strategy to try and avoid unity and potential resistance.</p> <p>Large groups with family links or shared cultural heritage posed a threat. It also shows how slave traders and slave ship captains understood enslaved people were unique individuals with both varied heritage and free will, contradicting the dehumanising nature of slavery.</p><p>On February 1st, thirty-seven men and nine women were taken onboard, the largest number on a single day. These enslaved people came from the merchant L. J. Herbert based in Lagoe. </p>"
                 }
               ],
-              "target": "https://jptmoore.github.io/bedford/canvas/1#xywh=5312,3396,110,44"
+              "target": "https://passage-tna.github.io/bedford/canvas/1#xywh=5312,3396,110,44"
             },
             {
-              "id": "https://jptmoore.github.io/bedford/canvas/1/annotation/13",
+              "id": "https://passage-tna.github.io/bedford/canvas/1/annotation/13",
               "type": "Annotation",
               "motivation": [
                 "tagging",
@@ -639,10 +639,10 @@
                   "value": "<p><b>02/02/1807 - Rising together</b></p> <p>As it prepared to sail to the Caribbean, 'the Bedford' had 170 men and 53 women held captive. Despite attempts to divide them, the enslaved Africans took the first opportunity to rise up against their captors.</p> <p>On 2 February 1807, while the ship was anchored near Tantum (Otuam in Ghana), the enslaved Africans 'seized the whole of the Europeans on the Main Deck'. Facing gunfire from Captain Wenman, as many as eighty of the Africans jumped overboard. While most of them were recaptured, and further enslaved people were trafficked onto the ship, their actions still posed a powerful challenge to the system of slavery.</p> <p> The owners of the ship, including the London-based enslaver Thomas Lumley, knew that rebellions on the coast were common. There had been an uprising on 'the Bedford's' previous crossing. They had instructed Wenman to guard against them and insured the 'middle risk (less returns)' for £1,393 11s. The enslaved boy, John Bedford, was onboard for both of these uprisings. </p>"
                 }
               ],
-              "target": "https://jptmoore.github.io/bedford/canvas/1#xywh=5333,3404,110,44"
+              "target": "https://passage-tna.github.io/bedford/canvas/1#xywh=5333,3404,110,44"
             },
             {
-              "id": "https://jptmoore.github.io/bedford/canvas/1/annotation/14",
+              "id": "https://passage-tna.github.io/bedford/canvas/1/annotation/14",
               "type": "Annotation",
               "motivation": [
                 "tagging",
@@ -676,10 +676,10 @@
                   "value": "<p><b>11/03/1807 - Stopping at Princess</b></p> <p>Captain Wenman sailed via 'Princess', the island known today as Príncipe, off the coast of West Africa in the Gulf of Guinea. It was common for ships trafficking enslaved Africans to stop at 'Princess' to restock food and water and make any repairs to the ship before proceeding to the Caribbean. </p>"
                 }
               ],
-              "target": "https://jptmoore.github.io/bedford/canvas/1#xywh=5449,3493,155,57"
+              "target": "https://passage-tna.github.io/bedford/canvas/1#xywh=5449,3493,155,57"
             },
             {
-              "id": "https://jptmoore.github.io/bedford/canvas/1/annotation/15",
+              "id": "https://passage-tna.github.io/bedford/canvas/1/annotation/15",
               "type": "Annotation",
               "motivation": [
                 "tagging",
@@ -713,10 +713,10 @@
                   "value": "<p><b>19/04/1807 - Reaching Barbados</b></p> <p>After a passage of 43 days, 'the Bedford' arrived in Carlisle Bay, Barbados. Captain Wenman wrote that 'the Ship is very leaky'.</p> <p>He had 233 enslaved people onboard. One enslaved woman had died during the crossing.</p> <p> Wenman noted that a Mr Hynd had wanted to purchased enslaved people from him in Barbados, but Captain Wenman declined him as he 'only wanted the large men'. </p>"
                 }
               ],
-              "target": "https://jptmoore.github.io/bedford/canvas/1#xywh=3776,3195,123,26"
+              "target": "https://passage-tna.github.io/bedford/canvas/1#xywh=3776,3195,123,26"
             },
             {
-              "id": "https://jptmoore.github.io/bedford/canvas/1/annotation/16",
+              "id": "https://passage-tna.github.io/bedford/canvas/1/annotation/16",
               "type": "Annotation",
               "motivation": [
                 "tagging",
@@ -750,10 +750,10 @@
                   "value": "<p><b>29/04/1807 - Onward trafficking in Jamaica</b></p> <p>'When 'the Bedford' arrived in Jamaica, the factors John Hinde & Co, who were brokering the sales of the captive Africans onboard, noted that because Captain Wenman fell 'short of provisions several of them are very thin'. This showed the inhumane conditions the enslaved endured during the passage from West Africa.</p> <p> Wenman later recorded paying for '2 shirts for 2 sick slaves in Kingston'. Seeking profit, he was attempting to cover up the illness among the enslaved people he trafficked. Prior to this, he also bought a shirt for the enslaved sailor 'Boy Bedford'/John Bedford. </p> <p> John Hinde & Co had written to the owners of 'the Bedford', Thomas Lumley & Co, in April to inform them that 'sales of slaves are very tedious, & in our opinion instead of the abolition making people eager to purchase, it has had the contrary effect'.</p>"
                 }
               ],
-              "target": "https://jptmoore.github.io/bedford/canvas/1#xywh=3237,3054,172,69"
+              "target": "https://passage-tna.github.io/bedford/canvas/1#xywh=3237,3054,172,69"
             },
             {
-              "id": "https://jptmoore.github.io/bedford/canvas/1/annotation/17",
+              "id": "https://passage-tna.github.io/bedford/canvas/1/annotation/17",
               "type": "Annotation",
               "motivation": [
                 "tagging",
@@ -787,10 +787,10 @@
                   "value": "<p><b>08/05/1807 - Montpelier plantations</b></p> <p>'The enslaved people from 'the Bedford' were trafficked to Jamaican enslavers and plantations over several months.</p> <p>On 8 May, three women and two men were trafficked to Montpelier in St James Parish, inland from Montego Bay. Montpelier was a large sugar and rum estate, split into two plantations. It was among those owned by the MP Lord Seaford. </p> <p> The plantation 'attorney', Charles Harris, purchased the five enslaved people on credit on Lord Seaford's behalf, showing how financing enabled the slavery economy. </p> <p> Twenty-four years later, in 1831, Montpelier became a key site during the pivotal uprising of enslaved people in Jamaica known as the Christmas Rebellion. The enslaved people from 'the Bedford' would have understood the power of mass resistance given the uprising on the West African coast. </p>"
                 }
               ],
-              "target": "https://jptmoore.github.io/bedford/canvas/1#xywh=3246,3044,99,42"
+              "target": "https://passage-tna.github.io/bedford/canvas/1#xywh=3246,3044,99,42"
             },
             {
-              "id": "https://jptmoore.github.io/bedford/canvas/1/annotation/18",
+              "id": "https://passage-tna.github.io/bedford/canvas/1/annotation/18",
               "type": "Annotation",
               "motivation": [
                 "tagging",
@@ -824,10 +824,10 @@
                   "value": "<p><b>23/07/1807 - 'Two slaves are yet on hand'</b></p> <p>'John Hinde & Co. wrote to the owners of 'the Bedford' in late July to say that 'Two of the Bedford’s Slaves are yet on hand the boy Bedford and one that has been attending the ship valuing them at £100 each, shall average near £75'. </p> <p> John Bedford, referred to again as ‘boy Bedford’, not only had the longest passage of any of the enslaved people trafficked on the Bedford, but he was also the last to be sold.</p>"
                 }
               ],
-              "target": "https://jptmoore.github.io/bedford/canvas/1#xywh=3303,3065,99,42"
+              "target": "https://passage-tna.github.io/bedford/canvas/1#xywh=3303,3065,99,42"
             },
             {
-              "id": "https://jptmoore.github.io/bedford/canvas/1/annotation/19",
+              "id": "https://passage-tna.github.io/bedford/canvas/1/annotation/19",
               "type": "Annotation",
               "motivation": [
                 "tagging",
@@ -861,10 +861,10 @@
                   "value": "<p><b>01/10/1807 - Navigating out of Port Royal</b></p> <p>'The ship ultimately remained in Jamaica for six months. At the beginning of October Captain Wenman 'paid Pilotage in and out of Port Royal'. Marine pilots with local knowledge would have been employed to guide the ship in and out of the port safely. <p> </p> In Jamaica, many of the pilots in this period were of African descent and could be both free or enslaved.</p>"
                 }
               ],
-              "target": "https://jptmoore.github.io/bedford/canvas/1#xywh=3321,3089,110,43"
+              "target": "https://passage-tna.github.io/bedford/canvas/1#xywh=3321,3089,110,43"
             },
             {
-              "id": "https://jptmoore.github.io/bedford/canvas/1/annotation/20",
+              "id": "https://passage-tna.github.io/bedford/canvas/1/annotation/20",
               "type": "Annotation",
               "motivation": [
                 "tagging",
@@ -898,7 +898,7 @@
                   "value": "<p><b>29/12/1807 - Natural commodities</b></p> <p>'The Bedford' arrived back in England at the very end of 1807. A ship's manifest showed that it was carrying cofffee, logwood, Nicaragua wood, fustic (another type of wood), indigo, pimento, sarsaparilla, and Madeira wine. <p> </p> Other records surrounding the ship's return show that it was badly damaged from the journey and had to have extensive repairs in Ramsgate. This meant the produce on board was also damaged. </p> <p> The commodities that 'the Bedford' exported from Jamaica reflect how the natural environment of the region was exploited by European traders. This extraction economy relied on the labour of enslaved Jamaicans who were tasked with felling the wood, intensively processing dyes, and harvesting plants, herbs, and spices.</p> <p> The botanical knowledge of enslaved people and Maroons was also capitalised on in this process. For example, they had long utilised the medicinal properties of sarsaparilla root. </p> <p> All of the types of wood exported were prized for use as dyes showing how the textile industry was further enmeshed with slavery.</p>"
                 }
               ],
-              "target": "https://jptmoore.github.io/bedford/canvas/1#xywh=5345,1946,52,21"
+              "target": "https://passage-tna.github.io/bedford/canvas/1#xywh=5345,1946,52,21"
             }
           ]
         }

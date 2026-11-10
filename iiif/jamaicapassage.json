@@ -3,7 +3,7 @@
     "http://geojson.org/geojson-ld/geojson-context.jsonld",
     "http://iiif.io/api/presentation/3/context.json"
   ],
-  "id": "https://jptmoore.github.io/bedford/iiif/jamaicapassage.json",
+  "id": "https://passage-tna.github.io/bedford/iiif/jamaicapassage.json",
   "type": "Manifest",
   "label": {
     "en": [
@@ -118,7 +118,7 @@
   },
   "items": [
     {
-      "id": "https://jptmoore.github.io/bedford/canvas/2",
+      "id": "https://passage-tna.github.io/bedford/canvas/2",
       "type": "Canvas",
       "label": {
         "en": [
@@ -129,23 +129,23 @@
       "height": 3972,
       "items": [
         {
-          "id": "https://jptmoore.github.io/bedford/canvas/2/painting",
+          "id": "https://passage-tna.github.io/bedford/canvas/2/painting",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://jptmoore.github.io/bedford/canvas/2/painting/image",
+              "id": "https://passage-tna.github.io/bedford/canvas/2/painting/image",
               "type": "Annotation",
               "motivation": "painting",
-              "target": "https://jptmoore.github.io/bedford/canvas/2",
+              "target": "https://passage-tna.github.io/bedford/canvas/2",
               "body": {
-                "id": "https://jptmoore.github.io/bedford/CO700-JAMAICA36/full/max/0/default.jpg",
+                "id": "https://passage-tna.github.io/bedford/CO700-JAMAICA36/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "width": 9642,
                 "height": 3972,
                 "service": [
                   {
-                    "id": "https://jptmoore.github.io/bedford/CO700-JAMAICA36",
+                    "id": "https://passage-tna.github.io/bedford/CO700-JAMAICA36",
                     "type": "ImageService3",
                     "profile": "level0",
                     "width": 9642,

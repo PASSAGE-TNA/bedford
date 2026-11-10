@@ -2,7 +2,7 @@
 
 The Bedford’s second and third passages plotted on a 1719 world map, and the stops the Bedford made in Jamaica.
 
-**[View the collection in Tamerlane](https://tamerlaneviewer.github.io/tamerlane/?iiif-content=https://jptmoore.github.io/bedford/iiif/passage.json)**
+**[View the collection in Tamerlane](https://tamerlaneviewer.github.io/tamerlane/?iiif-content=https://passage-tna.github.io/bedford/iiif/passage.json)**
 
 ## About
 
