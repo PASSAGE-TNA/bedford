@@ -22,6 +22,10 @@ export QW_DATA_DIR="$RUN_DIR/qwdata"
 export QW_CONFIG="${QW_CONFIG:-$APP_DIR/quickwit.yaml}"
 export RUST_LOG="${RUST_LOG:-warn,quickwit_serve=info}"
 export QUICKWIT_BASE_URL="http://127.0.0.1:$QUICKWIT_PORT/api/v1/"
+# Render sets RENDER_EXTERNAL_URL (e.g. https://bedford.onrender.com) on web services.
+if [[ -z "${ANNOSEARCH_PUBLIC_URL:-}" && -n "${RENDER_EXTERNAL_URL:-}" ]]; then
+    ANNOSEARCH_PUBLIC_URL="${RENDER_EXTERNAL_URL%/}/annosearch"
+fi
 export ANNOSEARCH_PUBLIC_URL="${ANNOSEARCH_PUBLIC_URL:-http://localhost:$PORT/annosearch}"
 export ANNOSEARCH_HOST=127.0.0.1
 export ANNOSEARCH_PORT
