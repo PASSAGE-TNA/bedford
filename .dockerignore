@@ -1,0 +1,3 @@
+# Only the Render runtime files are needed; keep the image tiles out of the build context.
+*
+!render/

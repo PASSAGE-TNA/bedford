@@ -1,0 +1,32 @@
+# Quickwit node config for the single-container Render deployment.
+# Loopback only: Quickwit's REST/gRPC/gossip ports are never reachable from outside the container.
+# Caches are reduced from the defaults (1G/500M/2GiB) because the Passage index is tiny.
+version: 0.8
+
+node_id: passage
+listen_address: 127.0.0.1
+data_dir: ${QW_DATA_DIR:-/tmp/passage/qwdata}
+
+rest:
+  listen_port: 7280
+
+indexer:
+  enable_otlp_endpoint: false
+  split_store_max_num_bytes: 256M
+  max_concurrent_split_uploads: 2
+  merge_concurrency: 1
+
+ingest_api:
+  max_queue_memory_usage: 64MiB
+  max_queue_disk_usage: 512MiB
+
+searcher:
+  fast_field_cache_capacity: 32M
+  split_footer_cache_capacity: 16M
+  partial_request_cache_capacity: 8M
+  aggregation_memory_limit: 32M
+  max_num_concurrent_split_searches: 4
+  request_timeout_secs: 10
+
+jaeger:
+  enable_endpoint: false

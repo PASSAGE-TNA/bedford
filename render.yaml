@@ -1,0 +1,32 @@
+# Render Blueprint for the Passage IIIF Content Search API (see RENDER.md).
+# One Docker web service: Nginx (public) -> AnnoSearch -> Quickwit, all in one container.
+services:
+  - type: web
+    name: bedford-search
+    runtime: docker
+    plan: free
+    region: frankfurt
+    dockerfilePath: ./Dockerfile.render
+    dockerContext: .
+    healthCheckPath: /health
+    autoDeployTrigger: commit
+    maxShutdownDelaySeconds: 30
+    # Redeploy (and so re-index) when the container or the published manifests change.
+    buildFilter:
+      paths:
+        - Dockerfile.render
+        - .dockerignore
+        - render.yaml
+        - render/**
+        - iiif/**
+    # No disk: the index lives in the container's ephemeral filesystem and is rebuilt on every start.
+    # Render injects PORT (10000); Nginx binds 0.0.0.0:$PORT.
+    envVars:
+      - key: ANNOSEARCH_PUBLIC_URL
+        value: https://bedford-search.onrender.com/annosearch
+      - key: PASSAGE_MANIFEST_BASE_URL
+        value: https://passage-tna.github.io/bedford/iiif
+      - key: PASSAGE_INDEXES
+        value: secondpassage thirdpassage
+      - key: CORS_ALLOWED_ORIGINS
+        value: https://passage-tna.github.io https://tamerlaneviewer.github.io

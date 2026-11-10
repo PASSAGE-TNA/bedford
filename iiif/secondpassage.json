@@ -116,6 +116,18 @@
       ]
     }
   },
+  "service": [
+    {
+      "id": "https://bedford-search.onrender.com/annosearch/secondpassage/search",
+      "type": "SearchService2",
+      "service": [
+        {
+          "id": "https://bedford-search.onrender.com/annosearch/secondpassage/autocomplete",
+          "type": "AutoCompleteService2"
+        }
+      ]
+    }
+  ],
   "items": [
     {
       "id": "https://passage-tna.github.io/bedford/canvas/1",
@@ -619,7 +631,7 @@
               "target": "https://passage-tna.github.io/bedford/canvas/1#xywh=3263,3060,144,61"
             },
             {
-              "id": "https://passage-tna.github.io/bedford/canvas/1/annotation/12",
+              "id": "https://passage-tna.github.io/bedford/canvas/1/annotation/13",
               "type": "Annotation",
               "motivation": [
                 "tagging",
@@ -656,7 +668,7 @@
               "target": "https://passage-tna.github.io/bedford/canvas/1#xywh=3263,3060,144,61"
             },
             {
-              "id": "https://passage-tna.github.io/bedford/canvas/1/annotation/13",
+              "id": "https://passage-tna.github.io/bedford/canvas/1/annotation/14",
               "type": "Annotation",
               "motivation": [
                 "tagging",
@@ -693,7 +705,7 @@
               "target": "https://passage-tna.github.io/bedford/canvas/1#xywh=3263,3060,144,61"
             },
             {
-              "id": "https://passage-tna.github.io/bedford/canvas/1/annotation/14",
+              "id": "https://passage-tna.github.io/bedford/canvas/1/annotation/15",
               "type": "Annotation",
               "motivation": [
                 "tagging",
@@ -730,7 +742,7 @@
               "target": "https://passage-tna.github.io/bedford/canvas/1#xywh=3263,3060,144,61"
             },
             {
-              "id": "https://passage-tna.github.io/bedford/canvas/1/annotation/15",
+              "id": "https://passage-tna.github.io/bedford/canvas/1/annotation/16",
               "type": "Annotation",
               "motivation": [
                 "tagging",
@@ -767,7 +779,7 @@
               "target": "https://passage-tna.github.io/bedford/canvas/1#xywh=3263,3060,144,61"
             },
             {
-              "id": "https://passage-tna.github.io/bedford/canvas/1/annotation/16",
+              "id": "https://passage-tna.github.io/bedford/canvas/1/annotation/17",
               "type": "Annotation",
               "motivation": [
                 "tagging",
@@ -804,7 +816,7 @@
               "target": "https://passage-tna.github.io/bedford/canvas/1#xywh=3263,3060,144,61"
             },
             {
-              "id": "https://passage-tna.github.io/bedford/canvas/1/annotation/17",
+              "id": "https://passage-tna.github.io/bedford/canvas/1/annotation/18",
               "type": "Annotation",
               "motivation": [
                 "tagging",
@@ -841,7 +853,7 @@
               "target": "https://passage-tna.github.io/bedford/canvas/1#xywh=3263,3060,144,61"
             },
             {
-              "id": "https://passage-tna.github.io/bedford/canvas/1/annotation/18",
+              "id": "https://passage-tna.github.io/bedford/canvas/1/annotation/19",
               "type": "Annotation",
               "motivation": [
                 "tagging",
@@ -878,7 +890,7 @@
               "target": "https://passage-tna.github.io/bedford/canvas/1#xywh=3263,3060,144,61"
             },
             {
-              "id": "https://passage-tna.github.io/bedford/canvas/1/annotation/19",
+              "id": "https://passage-tna.github.io/bedford/canvas/1/annotation/20",
               "type": "Annotation",
               "motivation": [
                 "tagging",
@@ -915,7 +927,7 @@
               "target": "https://passage-tna.github.io/bedford/canvas/1#xywh=5158,1995,88,30"
             },
             {
-              "id": "https://passage-tna.github.io/bedford/canvas/1/annotation/20",
+              "id": "https://passage-tna.github.io/bedford/canvas/1/annotation/21",
               "type": "Annotation",
               "motivation": [
                 "tagging",
