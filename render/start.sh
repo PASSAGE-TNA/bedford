@@ -5,7 +5,8 @@ set -uo pipefail
 
 PORT="${PORT:-10000}"
 PASSAGE_MANIFEST_BASE_URL="${PASSAGE_MANIFEST_BASE_URL:-https://passage-tna.github.io/bedford/iiif}"
-PASSAGE_INDEXES="${PASSAGE_INDEXES:-secondpassage thirdpassage}"
+PASSAGE_INDEXES="${PASSAGE_INDEXES:-passage}"
+PASSAGE_INDEX_TYPE="${PASSAGE_INDEX_TYPE:-Collection}"
 CORS_ALLOWED_ORIGINS="${CORS_ALLOWED_ORIGINS:-https://passage-tna.github.io https://tamerlaneviewer.github.io}"
 TRUSTED_PROXY_CIDRS="${TRUSTED_PROXY_CIDRS:-10.0.0.0/8 172.16.0.0/12 192.168.0.0/16}"
 INDEX_ATTEMPTS="${INDEX_ATTEMPTS:-3}"
@@ -123,6 +124,8 @@ validate_config() {
     [[ "$INDEX_ATTEMPTS" =~ ^[1-9][0-9]*$ ]] || die "invalid INDEX_ATTEMPTS"
     [[ "$STARTUP_TIMEOUT" =~ ^[1-9][0-9]*$ ]] || die "invalid STARTUP_TIMEOUT"
     [[ -n "${PASSAGE_INDEXES// }" ]] || die "PASSAGE_INDEXES is empty"
+    [[ "$PASSAGE_INDEX_TYPE" == Collection || "$PASSAGE_INDEX_TYPE" == Manifest ]] \
+        || die "PASSAGE_INDEX_TYPE must be Collection or Manifest"
     for item in $PASSAGE_INDEXES; do
         [[ "$item" =~ ^[a-z][a-z0-9_-]{2,62}$ ]] || die "invalid index name '$item'"
     done
@@ -176,7 +179,7 @@ build_index() {
         log "indexing '$name' from $uri (attempt $attempt/$INDEX_ATTEMPTS)"
         (( attempt > 1 )) && annosearch_cli delete --index "$name"
         annosearch_cli init --index "$name" \
-            && annosearch_cli load --index "$name" --type Manifest --uri "$uri" --commit
+            && annosearch_cli load --index "$name" --type "$PASSAGE_INDEX_TYPE" --uri "$uri" --commit
         for _ in $(seq 1 15); do
             docs="$(published_docs "${name}_annotations")"
             (( docs > 0 )) && break

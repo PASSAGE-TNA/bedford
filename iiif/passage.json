@@ -103,6 +103,18 @@
       ]
     }
   ],
+  "service": [
+    {
+      "id": "https://bedford.onrender.com/annosearch/passage/search",
+      "type": "SearchService2",
+      "service": [
+        {
+          "id": "https://bedford.onrender.com/annosearch/passage/autocomplete",
+          "type": "AutoCompleteService2"
+        }
+      ]
+    }
+  ],
   "items": [
     {
       "id": "https://passage-tna.github.io/bedford/iiif/secondpassage.json",

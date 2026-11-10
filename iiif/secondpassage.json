@@ -116,18 +116,6 @@
       ]
     }
   },
-  "service": [
-    {
-      "id": "https://bedford-search.onrender.com/annosearch/secondpassage/search",
-      "type": "SearchService2",
-      "service": [
-        {
-          "id": "https://bedford-search.onrender.com/annosearch/secondpassage/autocomplete",
-          "type": "AutoCompleteService2"
-        }
-      ]
-    }
-  ],
   "items": [
     {
       "id": "https://passage-tna.github.io/bedford/canvas/1",
