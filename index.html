@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#152d35">
+  <meta name="description" content="Explore the second and third passages of the Bedford, 1804–1807, through archival maps and IIIF stories. A resource associated with the PASSAGE research programme at The National Archives.">
+  <title>Bedford: Passages, 1804–1807 | PASSAGE</title>
+  <link rel="preconnect" href="https://tamerlaneviewer.github.io" crossorigin>
+  <link rel="preconnect" href="https://passage-tna.github.io" crossorigin>
+  <style>
+    :root { font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #1b2e35; background: #f5f3ec; }
+    * { box-sizing: border-box; }
+    body { margin: 0; }
+    a { color: #135f70; text-underline-offset: .2em; }
+    a:focus-visible, summary:focus-visible { outline: 3px solid #cc8a42; outline-offset: 4px; }
+    .wrap { max-width: 1440px; margin-inline: auto; padding-inline: clamp(18px, 4vw, 64px); }
+    .masthead { background: #152d35; color: #f5f3ec; }
+    .masthead .wrap { display: flex; justify-content: space-between; align-items: center; gap: 20px; padding-block: 18px; }
+    .brand { color: inherit; text-decoration: none; font-size: .82rem; font-weight: 750; letter-spacing: .17em; }
+    .masthead nav { display: flex; flex-wrap: wrap; gap: 20px; font-size: .86rem; }
+    .masthead nav a { color: #e9e4d6; }
+    .intro { padding-block: clamp(36px, 6vw, 82px) 34px; }
+    .eyebrow { text-transform: uppercase; letter-spacing: .18em; font-size: .73rem; font-weight: 750; color: #946735; margin: 0 0 16px; }
+    h1 { font-family: Georgia, 'Times New Roman', serif; font-size: clamp(2.6rem, 6.2vw, 5rem); line-height: 1.05; font-weight: 400; letter-spacing: -.035em; max-width: 900px; margin: 0 0 22px; }
+    h1 span { color: #896a4a; }
+    .lead { font-size: clamp(1.05rem, 1.6vw, 1.24rem); line-height: 1.72; max-width: 880px; margin: 0; }
+    .context { max-width: 880px; margin: 18px 0 0; color: #4c5e62; line-height: 1.65; }
+    .hero-rule { border: 0; border-top: 1px solid #d8d5c9; margin-top: 32px; }
+    .viewer-section { padding-bottom: 30px; }
+    .viewer-heading { display: flex; align-items: flex-end; justify-content: space-between; gap: 20px; flex-wrap: wrap; margin-bottom: 14px; }
+    h2 { font-family: Georgia, 'Times New Roman', serif; font-weight: 400; font-size: clamp(1.55rem, 3vw, 2.15rem); margin: 0; }
+    .viewer-heading p { font-size: .91rem; color: #536569; margin: 6px 0 0; }
+    .viewer-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+    .button { display: inline-flex; align-items: center; justify-content: center; border-radius: 5px; padding: 11px 16px; font-size: .9rem; font-weight: 650; text-decoration: none; background: #244954; color: #fff; }
+    .button:hover { background: #173842; }
+    .button.secondary { background: transparent; color: #244954; border: 1px solid #87979a; }
+    .viewer-frame { border: 1px solid #bac6c7; background: #e7ecea; border-radius: 7px; overflow: hidden; box-shadow: 0 12px 38px rgba(25,43,45,.12); }
+    iframe { display: block; width: 100%; height: min(76vh, 880px); min-height: 540px; border: 0; }
+    .viewer-note { color: #586a6d; font-size: .88rem; margin: 12px 0 0; }
+    .below { display: grid; grid-template-columns: minmax(0,1.5fr) minmax(260px,1fr); gap: 28px; padding-block: 28px 54px; }
+    .panel { border-top: 3px solid #b28b5e; padding-top: 20px; }
+    .panel h2 { font-size: 1.6rem; margin-bottom: 12px; }
+    .panel p, .panel li { line-height: 1.7; color: #33474d; }
+    .panel ul { margin: 10px 0 0; padding-left: 22px; }
+    .notice { background: #eee7db; padding: 22px 24px; border-left: 4px solid #946735; }
+    .notice h2 { font-size: 1.3rem; }
+    .notice p { margin-bottom: 0; }
+    footer { background: #152d35; color: #dce2e1; padding-block: 24px; font-size: .88rem; line-height: 1.7; }
+    footer a { color: #f5f3ec; }
+    @media(max-width: 760px) { .below { grid-template-columns: 1fr; } .masthead .wrap { align-items: flex-start; flex-direction: column; gap: 12px; } iframe { height: 73vh; min-height: 460px; } }
+  </style>
+  <script>
+    // Fire immediately, independently of the embedded viewer. Render's free
+    // instance may be asleep, so this best-effort request starts its cold boot.
+    // no-cors avoids requiring a CORS-enabled probe response; it does NOT
+    // confirm service readiness. Search remains available in the viewer.
+    const SEARCH_PROBE_URL =
+      'https://bedford.onrender.com/annosearch/passage/search?q=bedford';
+    try {
+      fetch(SEARCH_PROBE_URL, {
+        method: 'GET',
+        mode: 'no-cors',
+        cache: 'no-store',
+        credentials: 'omit',
+        referrerPolicy: 'no-referrer'
+      }).catch(() => {});
+    } catch (_) { /* Ignore probe errors so the viewer always loads. */ }
+  </script>
+</head>
+<body>
+  <header class="masthead">
+    <div class="wrap">
+      <a class="brand" href="https://www.nationalarchives.gov.uk/professional-guidance-and-services/our-research-and-academic-collaboration/our-research-projects/collections-and-archives-research/passage/">PASSAGE <span aria-hidden="true">/</span> THE NATIONAL ARCHIVES</a>
+      <nav aria-label="Related links">
+        <a href="https://www.nationalarchives.gov.uk/professional-guidance-and-services/our-research-and-academic-collaboration/our-research-projects/collections-and-archives-research/passage/">About PASSAGE</a>
+        <a href="https://github.com/passage-tna/bedford">Source and records</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="intro wrap" aria-labelledby="page-title">
+      <p class="eyebrow">Interactive archival maps · 1804–1807</p>
+      <h1 id="page-title">Bedford: <span>Passages, 1804–1807</span></h1>
+      <p class="lead">Trace the second and third transatlantic voyages of the <em>Bedford</em>, a British ship involved in trafficking enslaved African people, through historical maps and records held by The National Archives.</p>
+      <p class="context">This resource is associated with PASSAGE (Partnership for Atlantic Slavery Scholarship, Archiving and Global Exchange), a collaborative research programme funded by Lloyd’s Register Foundation. PASSAGE combines research into the histories of enslavement with an international programme supporting researchers and archivists in West Africa and the Caribbean.</p>
+      <hr class="hero-rule">
+    </section>
+
+    <section class="viewer-section wrap" aria-labelledby="explore-title">
+      <div class="viewer-heading">
+        <div>
+          <h2 id="explore-title">Explore the voyages</h2>
+          <p>Follow the stories using the text navigation within the map viewer.</p>
+        </div>
+        <div class="viewer-actions">
+          <a class="button" href="https://tamerlaneviewer.github.io/tamerlane/?iiif-content=https%3A%2F%2Fpassage-tna.github.io%2Fbedford%2Fiiif%2Fpassage.json" target="_blank" rel="noopener noreferrer">Open full-screen viewer ↗</a>
+          <a class="button secondary" href="iiif/passage.json">IIIF Collection</a>
+        </div>
+      </div>
+      <div class="viewer-frame">
+        <iframe
+          title="Bedford passages interactive IIIF map viewer"
+          src="https://tamerlaneviewer.github.io/tamerlane/?iiif-content=https%3A%2F%2Fpassage-tna.github.io%2Fbedford%2Fiiif%2Fpassage.json"
+          loading="eager"
+          allowfullscreen></iframe>
+      </div>
+      <p class="viewer-note">Content search may take longer on its first use while the search service starts. The map viewer can still be explored during this time.</p>
+    </section>
+
+    <section class="below wrap" aria-label="Further information">
+      <div class="panel">
+        <h2>About this collection</h2>
+        <p>Three interactive map narratives present the Bedford’s second passage (1804–1805), third passage (1806–1807), and stops in Jamaica. Routes are shown on a 1719 world map, with additional locations on a historical map of Jamaica.</p>
+        <p><strong>Archival sources:</strong> C 114/158; T 71/119, T 71/65 and T 71/164; T 70/1583 and T 70/1584/74. Map references: WO 78/419 and CO 700/Jamaica 36.</p>
+        <p><a href="https://www.nationalarchives.gov.uk/professional-guidance-and-services/our-research-and-academic-collaboration/our-research-projects/collections-and-archives-research/passage/">Learn more about the PASSAGE project at The National Archives ↗</a></p>
+      </div>
+      <aside class="panel notice" aria-labelledby="content-warning">
+        <h2 id="content-warning">Content warning</h2>
+        <p>This resource examines histories of transatlantic enslavement and includes quotations from historical records containing dehumanising and distressing descriptions of enslaved people.</p>
+      </aside>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <strong>PASSAGE · Bedford</strong><br>
+      Research and records: <a href="https://www.nationalarchives.gov.uk/">The National Archives</a>.
+      Data and implementation: <a href="https://github.com/passage-tna/bedford">PASSAGE-TNA / bedford</a>.
+      <br>For image attribution and reuse conditions, consult the linked repository and catalogue records.
+    </div>
+  </footer>
+</body>
+</html>
